@@ -34,7 +34,8 @@ public class ParamCalculoTest {
             {20, 10, 10},
             {2, 2, 2},
             {0, 0, 0},
-            {36, 10, 2}
+            //OJO ERROR
+            {36, 10, 5}
         });
     }
 
