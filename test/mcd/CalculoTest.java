@@ -106,10 +106,10 @@ public class CalculoTest {
     @Test
     public void testObtenerMCD() {
         System.out.println("obtenerMCD");
-        int num1 = 0;
-        int num2 = 0;
+        int num1 = 20;
+        int num2 = 10;
         Calculo instance = new Calculo();
-        int expResult = 0;
+        int expResult = 10;
         int result = instance.obtenerMCD(num1, num2);
         assertEquals(expResult, result);
         //fail("The test case is a prototype.");
