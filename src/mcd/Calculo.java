@@ -18,11 +18,20 @@ public class Calculo {
     public Calculo() {
     }
 
-    //setters
+    Calculo(int i, int i0, String cálculo_correcto) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+ 
+    /**
+    *setters
+    */
     public void setNumero1(int numero) {
         this.numero1 = numero;
-        //si el número es negativo cambiamos a cero y
-        //establecemos la propiedad "mensajeResultado" a "Error"
+        /**
+        *si el número es negativo cambiamos a cero y
+        *establecemos la propiedad "mensajeResultado" a "Error"
+        */
         if (numero < 0) {
             mensajeResultado = "Error, los números no pueden ser negativos";
         }
@@ -30,21 +39,28 @@ public class Calculo {
 
     public void setNumero2(int numero) {
         this.numero2 = numero;
-        //si el número es negativo cambiamos a cero y
-        //establecemos la propiedad "mensajeResultado" a "Error"
+        /**
+         * si el número es negativo cambiamos a cero y
+        *establecemos la propiedad "mensajeResultado" a "Error"
+        */
         if (numero < 0) {
             mensajeResultado = "Error, los números no pueden ser negativos";
         }
     }
 
-    //resultado del cálculo del MCD
+    /**
+    *resultado del cálculo del MCD
+    */
+            
+            
     public String getMensajeResultado() {
         return mensajeResultado;
     }
 
-    //getters
-    //encapsulamos la modificación de las variables numero1 y numero2
-    //para comprobar que los valores son correctos entre 
+    /**getters,
+    *encapsulamos la modificación de las variables numero1 y numero2
+    *para comprobar que los valores son correctos entre 
+    */
     public int getNumero1() {
         return numero1;
     }
@@ -53,14 +69,18 @@ public class Calculo {
         return numero2;
     }
 
-    //método para calcular el MCD
+    /**
+    *método para calcular el MCD
+    */
     public int obtenerMCD(int num1, int num2) {
         int resto;
         int numDiv1 = num1;
         int numDiv2 = num2;
-        
-        if (num1 <0 || num2 < 0) return 0;
-       
+
+        if (num1 < 0 || num2 < 0) {
+            return 0;
+        }
+
         try {
             do {
                 resto = numDiv1 % numDiv2;
