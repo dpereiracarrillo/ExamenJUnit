@@ -31,10 +31,10 @@ public class ParamCalculoTest {
     @Parameterized.Parameters
     public static Collection calculando() {
         return Arrays.asList(new Object[][]{
-            {10, 4, 2},
+            {20, 10, 10},
             {2, 2, 2},
-            {12, 4, 4},
-            {12, 3, 3}
+            {0, 0, 0},
+            {36, 10, 2}
         });
     }
 
